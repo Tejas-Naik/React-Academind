@@ -10,3 +10,7 @@ age = 18;
 const birthYear = 2005;
 console.log(age);
 console.log(birthYear);
+
+// Arrow FUnctions
+const calcAge = (bYear) => 2023 - bYear;
+console.log(calcAge(2005));
