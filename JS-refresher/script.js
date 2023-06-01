@@ -47,3 +47,14 @@ tejas.printMyName();
 
 const rntejas = new Engineer();
 rntejas.printProfession();
+
+// Spread and Rest Operators
+// Spread
+const numbers = [1, 2, 3];
+const newNumbers = [...numbers, 4];
+console.log(newNumbers);
+
+// Rest and desstructuring
+const [one, two, ...otherNumbers] = newNumbers;
+console.log(one, two, otherNumbers);
+
