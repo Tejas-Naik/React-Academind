@@ -14,3 +14,7 @@ console.log(birthYear);
 // Arrow FUnctions
 const calcAge = (bYear) => 2023 - bYear;
 console.log(calcAge(2005));
+
+// Imports and Exports
+// import { anotherPerson } from "./io";
+// console.log(calcAge(anotherPerson.bYear))
