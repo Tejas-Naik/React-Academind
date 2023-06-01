@@ -58,3 +58,8 @@ console.log(newNumbers);
 const [one, two, ...otherNumbers] = newNumbers;
 console.log(one, two, otherNumbers);
 
+// Array Methods
+const nums = [1, 2, 3, 4, 5];
+const doubleNums = nums.map(num => num * 2);
+const evenNumbers = doubleNums.filter(num => num % 2 == 0);
+const sumEvenNumbers = evenNumbers.reduce((num, acc) => num + acc, 0);
