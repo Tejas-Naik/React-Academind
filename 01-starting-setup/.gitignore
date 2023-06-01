@@ -1,0 +1,44 @@
+# Dependency directories
+/node_modules
+/.pnp
+.pnp.js
+
+# Built artifacts
+/build
+/dist
+
+# Logs and databases
+/*.log
+*.log.*
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.DS_Store
+
+# Testing and coverage files
+/coverage
+
+# Environment variables
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# IDE and editor files
+/.idea
+/.vscode
+*.swp
+*.swo
+*.swn
+*.bak
+
+# Compiled binary files
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+
+# Package lock files
+npm
