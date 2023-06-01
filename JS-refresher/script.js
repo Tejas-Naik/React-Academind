@@ -18,3 +18,32 @@ console.log(calcAge(2005));
 // Imports and Exports
 // import { anotherPerson } from "./io";
 // console.log(calcAge(anotherPerson.bYear))
+
+// Classes
+class Person {
+    constructor() {
+        this.name = "Tejas";
+    }
+
+    printMyName() {
+        console.log(this.name);
+    }
+}
+
+class Engineer extends Person {
+    constructor() {
+        super()
+        this.profession = "Engineer";
+    }
+
+    printProfession() {
+        console.log(this.profession);
+    }
+
+}
+
+const tejas = new Person();
+tejas.printMyName();
+
+const rntejas = new Engineer();
+rntejas.printProfession();
