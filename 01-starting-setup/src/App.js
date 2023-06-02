@@ -1,4 +1,4 @@
-import ExpenseItem from "./components/ExpenseItem";
+import ExpenseItem from "./components/Expenses/ExpenseItem";
 function App() {
   const expenses = [
     {
@@ -30,7 +30,7 @@ function App() {
           id={expense.id}
           title={expense.title}
           price={expense.amount.toFixed(2)}
-          date={expense.date.toISOString()} // Convert to string representation
+          date={expense.date}
         />
       ))}
     </div>
