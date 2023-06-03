@@ -21,7 +21,7 @@ const Expenses = (props) => {
           <ExpenseItem
             key={expense.id}
             title={expense.title}
-            amount={expense.amount.toFixed(2)}
+            amount={expense.amount}
             date={expense.date}
           />
         ))}
