@@ -2,55 +2,56 @@ import React, { useState } from "react";
 import "./ExpenseForm.css";
 
 const ExpenseForm = () => {
-    const [userInput, setUserInput] = useState({
-        enteredTitle: "",
-        enteredAmount: "",
-        enteredDate: "",
-    });
-    // const [enteredTitle, setEnteredTitle] = useState("");
-    // const [enteredAmount, setEnteredAmount] = useState("");
-    // const [enteredDate, setEnteredDate] = useState("");
+    const [enteredTitle, setEnteredTitle] = useState("");
+    const [enteredAmount, setEnteredAmount] = useState("");
+    const [enteredDate, setEnteredDate] = useState("");
 
-    const titleChangeHandler = (e) => {
-        // setUserInput({
-        //     ...userInput,
-        //     enteredTitle: e.target.value,
-        // })
-        setUserInput((prevState) => {
-            return { ...prevState, enteredTitle: e.target.value, }
-        })
-    }
-
-    const amountChangeHandler = (e) => {
-        setUserInput({
-            ...userInput,
-            enteredAmount: e.target.value,
-        })
-    }
-
-    const dateChangeHandler = (e) => {
-        setUserInput({
-            ...userInput,
-            enteredDate: e.target.value,
-        })
-        console.log(userInput);
-    }
-
+    // const [userInput, setUserInput] = useState({
+    //     enteredTitle: "",
+    //     enteredAmount: "",
+    //     enteredDate: "",
+    // });
 
     // const titleChangeHandler = (e) => {
-    //     setEnteredTitle(e.target.value);
-    //     console.log(enteredTitle);
+    //     // setUserInput({
+    //     //     ...userInput,
+    //     //     enteredTitle: e.target.value,
+    //     // })
+    //     setUserInput((prevState) => {
+    //         return { ...prevState, enteredTitle: e.target.value, }
+    //     })
     // }
 
     // const amountChangeHandler = (e) => {
-    //     setEnteredAmount(e.target.value);
-    //     console.log(enteredAmount);
+    //     setUserInput({
+    //         ...userInput,
+    //         enteredAmount: e.target.value,
+    //     })
     // }
 
     // const dateChangeHandler = (e) => {
-    //     setEnteredDate(e.target.value);
-    //     console.log(enteredDate);
+    //     setUserInput({
+    //         ...userInput,
+    //         enteredDate: e.target.value,
+    //     })
+    //     console.log(userInput);
     // }
+
+
+    const titleChangeHandler = (e) => {
+        setEnteredTitle(e.target.value);
+        console.log(enteredTitle);
+    }
+
+    const amountChangeHandler = (e) => {
+        setEnteredAmount(e.target.value);
+        console.log(enteredAmount);
+    }
+
+    const dateChangeHandler = (e) => {
+        setEnteredDate(e.target.value);
+        console.log(enteredDate);
+    }
 
     return (
         <form>
